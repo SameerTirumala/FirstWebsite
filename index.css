@@ -1,0 +1,98 @@
+body {
+    /*background-color: yellow;*/
+    margin: 0;
+}
+
+.logo {
+    display: flex;
+    /* our main axis is horizontal bc we want row, flex by default is row so horizontal */
+    justify-content: center;
+    /*background-color: yellow;*/
+
+    /* only centers within div itself, not entire page. Ex try below command
+    width: 500px; */
+
+    /*always aligns on cross axis (so if we justified vertically this would align hor, but we stuck w default here*/
+    align-items: center;
+    margin: 30px;
+}
+
+.logo h1{
+    padding-left: 10px;
+    font-family: "Garamond";
+    font-weight: 400;
+}
+
+.description {
+    text-align: center;
+    font-size: 24px;
+    font-family: "Quicksand";
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* arrange elements in a grid, decide how much (in fractional units of page) each col (ie each container should get) */
+    grid-gap: 20px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.menu-item {
+    box-shadow: 0px 0px 40px -15px #aaa;
+}
+
+.menu-item img{
+    width: 100%;
+}
+
+button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 40px;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #333;
+    background: none;
+    border-radius: 3px;
+    transition: .5s all;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #eee;
+}
+/*
+.div1 {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    #margin-bottom or margin-top can be more specific, add space outside box
+    padding adds space within container
+}
+
+
+#chain selectors together
+.div1 p{
+    text-align: center;
+    color: white;
+    margin: 20px;
+    #margin-bottom or margin-top can be more specific
+}
+
+.div2 {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    
+}
+*/
+
+/*use # to call element by id
+just type element to call by tag
+use . to call by class
+applies background color to entire body*/
